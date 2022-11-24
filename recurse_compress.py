@@ -55,6 +55,6 @@ for subdirs in sub_dir_list:
     if sub_subdir_list:
         success_compress = compress_directories(sub_subdir_list)
 
-for subdirs in success_compress:
-    print("Removing: "+subdirs)
-    rmtree(subdirs)
+        for subdirs in success_compress:
+            print("Removing: "+subdirs)
+            rmtree(subdirs)
